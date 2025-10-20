@@ -81,7 +81,7 @@ public abstract class GuiCore<T extends ContainerBase<? extends IInventory>> ext
 
     }
 
-    protected void drawSlot(Slot slotIn) {
+    public void drawSlot(Slot slotIn) {
         int i = slotIn.xPos;
         int j = slotIn.yPos;
         ItemStack itemstack = slotIn.getStack();
@@ -148,7 +148,7 @@ public abstract class GuiCore<T extends ContainerBase<? extends IInventory>> ext
         this.zLevel = 0.0F;
     }
 
-    protected void updateDragSplitting() {
+    public void updateDragSplitting() {
         ItemStack itemstack = this.mc.player.inventory.getItemStack();
 
         if (!itemstack.isEmpty() && this.dragSplitting) {

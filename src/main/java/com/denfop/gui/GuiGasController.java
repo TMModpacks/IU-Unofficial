@@ -107,7 +107,7 @@ public class GuiGasController extends GuiIU<ContainerGasMainController> {
         this.itemRender.zLevel = 0.0F;
     }
 
-    private boolean isMouseOverSlot(Slot slotIn, int mouseX, int mouseY) {
+    public boolean isMouseOverSlot(Slot slotIn, int mouseX, int mouseY) {
         return this.isPointInRegion(slotIn.xPos, slotIn.yPos, 16, 16, mouseX, mouseY);
     }
 
