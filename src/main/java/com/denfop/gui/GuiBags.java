@@ -174,7 +174,7 @@ public class GuiBags extends GuiIU<ContainerBags> {
         this.itemRender.zLevel = 0.0F;
     }
 
-    private boolean isMouseOverSlot(Slot slotIn, int mouseX, int mouseY) {
+    public boolean isMouseOverSlot(Slot slotIn, int mouseX, int mouseY) {
         return this.isPointInRegion(slotIn.xPos, slotIn.yPos, 16, 16, mouseX, mouseY);
     }
 
@@ -182,7 +182,7 @@ public class GuiBags extends GuiIU<ContainerBags> {
         super.drawScreen(mouseX, mouseY, partialTicks);
     }
 
-    protected void drawSlot(Slot slotIn) {
+    public void drawSlot(Slot slotIn) {
         super.drawSlot(slotIn);
 
 
